@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../img/photo.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}    
+
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 37px;
+    opacity: .9;
+    
+    
+}
+.box .inputbox{
+    position: relative;
+}
+
+.box .inputbox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    letter-spacing: 1px;
+}
+.box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px  0;
+    font-size: 16px;
+    color: white;
+    opacity: .9;
+    pointer-events: none;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+
+ .inputbox input[type="text"]:focus ~ label,.inputbox input[type="text"]:valid ~ label{
+    top: -20px;
+    left:0;
+    color:#ffc0cb;
+    font-size: 14px;
+}
+.inputbox input[type="password"]:focus ~ label,.inputbox input[type="password"]:valid ~ label{
+    top: -20px;
+    left:0;
+    color:#72cbd6;
+    font-size: 14px;
+}
+.box input[type="submit"]{
+    border: none;
+    outline: none;
+    color:white;
+    background:pink;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
